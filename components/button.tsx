@@ -7,11 +7,11 @@ interface buttonObj {
 
 export const Button= (props: buttonObj)=>{
 
-    const texts= props.text;
+    const text= props.text;
 
     return(
         <button className="p-6 bg-purple-600 text-white font-bold text-xl rounded-2xl">
-            {texts}
+            {text}
         </button>
 
 
