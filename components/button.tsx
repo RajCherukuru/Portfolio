@@ -10,7 +10,7 @@ export const Button= (props: buttonObj)=>{
     const text= props.text;
 
     return(
-        <button className="p-6 bg-purple-600 text-white font-bold text-xl rounded-2xl">
+        <button className="p-3 bg-purple-600 text-white font-bold text-2xl rounded-2xl">
             {text}
         </button>
 
