@@ -2,6 +2,8 @@
 
 import React from "react";
 import { Skillstab } from "./skilltab";
+import { motion } from "framer-motion";
+import { Heading } from "./heading";
 
 
 
@@ -53,9 +55,14 @@ export const Skills= ()=>{
 
 
     return (
-       <div className="flex flex-col gap-10 items-center">
 
-        <div className="text-5xl font-bold">Skills</div>
+        <section>
+
+                <div className="flex flex-col gap-10 items-center">
+
+        <Heading heading="Skills"></Heading>
+
+        
 
 
             <div className="grid grid-cols-4 w-3/4 mx-auto">  
@@ -90,13 +97,15 @@ export const Skills= ()=>{
                     }
             </div>
 
-            <div className="grid grid-cols-2 w-5/12 mx-auto">  
+            {/* <div className="grid grid-cols-2 w-5/12 mx-auto">  
                     {
                         skills5.map((skill1, index) =>(
                             <Skillstab name={skill1.name} url={skill1.url}></Skillstab>
                         ))
                     }
-            </div>
+            </div> */}
+
+
             <div className="grid grid-cols-2 w-4/12 mx-auto">  
                     {
                         skills6.map((skill1, index) =>(
@@ -116,5 +125,10 @@ export const Skills= ()=>{
 
 
        </div>
+
+        </section>
+
+
+       
     )
 }

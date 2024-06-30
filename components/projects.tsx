@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { Card } from "./card";
+import { Heading } from "./heading";
 
 
 
@@ -32,7 +34,7 @@ const  Projects = ()=>{
     return (
         <div className="flex flex-col items-center gap-10">
 
-            <div className="font-bold text-5xl">My Projects</div>
+            <Heading heading="Projects"></Heading>
 
             <div className="flex flex-col gap-8">
                 {

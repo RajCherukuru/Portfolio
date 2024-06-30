@@ -18,13 +18,20 @@ export const Card = (props:{title: string, desc: string, skills:string[]})=>{
 
     return (
         <motion.div 
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 1.1 }}
-        initial={{ opacity: 0}}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+
+        
         animate={{ type: spring}}
-        transition={{ duration: 0.5 }}
-        whileInView={{opacity: 1}}
-        viewport={{once: true}}
+        transition={{
+            ease: "easeOut",
+            duration: 0.1,
+            scale: {
+              type: "spring", stiffness:70
+            }
+          }}
+          initial={{scale:0.8, opacity: 0}}
+        whileInView={{ scale:1 , opacity: 1}}
        
          className="flex flex-row justify-center gap-16 items-center rounded-3xl border-purple-700 border-b-8 border-r-8 ">
 
@@ -50,7 +57,7 @@ export const Card = (props:{title: string, desc: string, skills:string[]})=>{
                
             </div>
 
-            <img height="600" width="500" className="rounded-lg" src="https://i0.wp.com/curiositygym.com/wp-content/uploads/2022/05/portfolio1.jpg?fit=1920%2C1080&ssl=1"/>
+            <img    height="600" width="500" className="rounded-lg" src="https://i0.wp.com/curiositygym.com/wp-content/uploads/2022/05/portfolio1.jpg?fit=1920%2C1080&ssl=1"/>
 
 
 
