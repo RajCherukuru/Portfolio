@@ -7,6 +7,7 @@ import { motion, useScroll } from "framer-motion"
 import Projects from "@/components/projects";
 import { Skills } from "@/components/skills";
 import { Workx } from "@/components/workx";
+import { Workexperience } from "@/components/workexperience";
 
 
 export default function Home() {
@@ -27,11 +28,11 @@ export default function Home() {
 
             <Skills></Skills>
 
-            <Workx></Workx>
-
-            <Workx></Workx>
+            <Workexperience></Workexperience>
 
             <Projects></Projects>
+
+            <Workx></Workx>
 
          
         </div>
