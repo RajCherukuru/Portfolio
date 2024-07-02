@@ -25,7 +25,8 @@ export const Workexperiencecard: React.FC<workprops> = ({work})=>{
 
      return (
 
-        <motion.div  initial={{scale:0.7}} whileInView={{scale:1}} className="relative w-8/12 mx-auto font-mono">
+        <motion.div whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}  initial={{scale:0.7}} whileInView={{scale:1}} className="relative w-8/12 mx-auto font-mono">
 
                 <div className="absolute w-full h-full rounded-xl bg-purple-500 left-3 top-3 -z-10 ">
                         

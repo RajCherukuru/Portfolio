@@ -2,6 +2,8 @@ import { motion, useViewportScroll, useTransform, spring } from "framer-motion";
 import React from "react";
 
 
+import { FaGithub } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 
 
 
@@ -32,7 +34,24 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
                     <div className="flex flex-col gap-16 bg-black border-white border p-10 rounded-3xl w-full h-full justify-between ">
 
                         <div className="flex flex-col gap-4">
-                            <div className="text-4xl text-yellow-400">{title}</div>
+
+                            <div className="flex justify-between">
+                                <div className="text-4xl text-yellow-400">{title}</div>
+                                <div className="flex gap-3">   
+                                <a href="https://github.com/RajCherukuru" target="blank"><FaGithub size={40} className=" " /></a>
+                                
+                                {
+                                    title=="StudyNotion" ?  <a href="https://github.com/RajCherukuru" target="blank"><CgWebsite size={40} className=" " /></a>: <div></div>
+                                }
+                               
+
+                                </div>
+                                
+
+                            </div>
+                           
+
+
                             <div className="w-96">{desc}</div>
                         </div>
 
