@@ -11,17 +11,17 @@ export const TypeAnimate= ()=>{
         <TypeAnimation
                     sequence={[
                       // Same substring at the start will only be typed out once, initially
-                      'Weaving Spells with Typescript.',
+                      'Crafting Spells with Typescript.',
                       2000, // wait 1s before replacing "Mice" with "Hamsters"
-                      'Weaving Spells with Next.js.',
+                      'Crafting Spells with Next.js.',
                       2000,
-                      'Weaving Spells with Recoil.',
+                      'Crafting Spells with Recoil.',
                       2000,
-                      'Weaving Spells with PostgresSQL.',
+                      'Crafting Spells with PostgresSQL.',
                       2000,
-                      'Weaving Spells with AWS.',
+                      'Crafting Spells with AWS.',
                       2000,
-                      'Weaving Spells with Kubernetes.',
+                      'Crafting Spells with Kubernetes.',
                       2000,
                     ]}
                     wrapper="span"
