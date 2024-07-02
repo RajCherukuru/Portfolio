@@ -1,30 +1,27 @@
 import { motion } from "framer-motion";
 import React from "react";
 
+interface SkillstabProps {
+    name: string;
+    url: string;
+    color: string;
+    icon: React.ReactNode;
+}
 
-export const Skillstab= (props:{name: string, url:string})=>{
-
-    const name=props.name;
-    const url=props.url;
-
-
-
+export const Skillstab: React.FC<SkillstabProps> = ({ name, url, color, icon }) => {
     return (
-        <motion.div  whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 1.1 }}
-        transition={{
-            duration: 0.1,
-            scale: {
-              type: "spring",
-            }
-          }}
-
-          initial={{ opacity: 0, y: 50, scale: 0.3 }}
+        <motion.div 
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 1.1 }}
+            initial={{ opacity: 0, y: 50, scale: 0.3 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-
-         className="flex flex-row gap-3 items-center justify-center p-3 rounded-3xl border-purple-700 border-b-8 border-r-8 w-60">
-            <img src={url}/>
-            <div>{name}</div>
+            className="relative"
+        >
+            <div className={`absolute left-2 top-2 -z-10 h-full w-60 ${color} rounded-lg`} />
+            <div className="flex flex-row gap-2 items-center justify-center bg-black p-4 rounded-xl border-white border-2 w-60">
+                {icon}
+                <div>{name}</div>
+            </div>
         </motion.div>
-    )
+    );
 }

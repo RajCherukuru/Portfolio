@@ -11,15 +11,24 @@ export const TypeAnimate= ()=>{
         <TypeAnimation
                     sequence={[
                       // Same substring at the start will only be typed out once, initially
-                      'I am a full stack developer.',
-                      3000, // wait 1s before replacing "Mice" with "Hamsters"
-                      'I am a Devops Engineer.',
-                      1000,
+                      'Weaving Spells with Typescript.',
+                      2000, // wait 1s before replacing "Mice" with "Hamsters"
+                      'Weaving Spells with Next.js.',
+                      2000,
+                      'Weaving Spells with Recoil.',
+                      2000,
+                      'Weaving Spells with PostgresSQL.',
+                      2000,
+                      'Weaving Spells with AWS.',
+                      2000,
+                      'Weaving Spells with Kubernetes.',
+                      2000,
                     ]}
                     wrapper="span"
                     speed={15}
                     style={{ fontSize: '2em', display: 'inline-block' }}
                     repeat={Infinity}
+                    className="text-green-400"
                   />
     )
 

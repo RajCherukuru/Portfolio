@@ -25,40 +25,49 @@ export const Workexperiencecard: React.FC<workprops> = ({work})=>{
 
      return (
 
-        <motion.div initial={{scale:0.5}} whileInView={{scale:1}} className="w-6/12 mx-auto flex flex-col gap-10  rounded-3xl p-8 border-t-2 border-l-2 border-e-8 border-b-8 border-purple-600 ">
+        <motion.div  initial={{scale:0.7}} whileInView={{scale:1}} className="relative w-8/12 mx-auto font-mono">
 
+                <div className="absolute w-full h-full rounded-xl bg-purple-500 left-3 top-3 -z-10 ">
+                        
 
-            <div className="flex flex-row justify-between">
-                <div className="">Raj Here</div>
-
-                <div className="flex flex-row gap-4 ">
-                    <div>{country}</div>
-                    <div>.</div>
-                    <div>{startDate}</div>
-                    <div>-</div>
-                    <div>{endDate}</div>
                 </div>
+
+                <div className="w-full mx-auto flex flex-col gap-10 bg-black rounded-3xl p-8 border ">
+
+
+                <div className="flex flex-row justify-between">
+                    <div className=""></div>
+
+                    <div className="flex flex-row gap-4  text-green-400">
+                        <div className="text-2xl ">{country}</div>
+                        <div  className="text-2xl">.</div>
+                        <div  className="text-2xl">{startDate}</div>
+                        <div  className="text-2xl">-</div>
+                        <div  className="text-2xl">{endDate}</div>
+                    </div>
+                </div>
+
+
+
+                <div className="text-4xl text-yellow-400">{company}</div>
+
+                <div  className="text-3xl text-purple-300">{role}</div>
+
+                <ul className="list-disc list-inside text-xl font-sans ">
+                    {
+                        desc.map((d, index) =>(
+                            <li key={index}>{d}</li>
+                        ))
+                    }
+                </ul>
+
+                <div className="text-xl  text-cyan-400 ">{skills}</div>
+
+                
+
+
             </div>
-
-
-
-            <div>{company}</div>
-
-            <div>{role}</div>
-
-            <ul>
-                {
-                    desc.map((d, index) =>(
-                        <li key={index}>{d}</li>
-                    ))
-                }
-            </ul>
-
-            <div>{skills}</div>
-
-            
-
-
         </motion.div>
+
      )
 }

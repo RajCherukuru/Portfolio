@@ -1,43 +1,52 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import Image from 'next/image';
+
 
 import { TypeAnimate } from "@/components/typeanimate";
 import { Button } from "@/components/button";
+import { motion } from "framer-motion";
+
+import { FloatingImg } from "./floatingImg";
+
+export const Introduction = ({scrollAction, sectionRefs})=>{
 
 
-export const Introduction = ()=>{
     return (
 
-        <section className="w-full h-screen flex">
+        <section ref={sectionRefs.intro} className="w-full flex  font-mono ">
 
-            <div className="flex flex-row gap-10 mx-auto w-full justify-evenly">
+            <div className="flex flex-row gap-10 mx-auto w-full justify-evenly items-start">
 
-                  <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-8">
 
-                      <div className=" text-purple-700 text-5xl">Raj Cherukuru</div>
+
+                      <div className=" text-cyan-400 text-5xl">Raj Kishan Cherukuru</div>
+                      <div className="text-4xl text-green-400">Code Magician.</div>
                       <TypeAnimate></TypeAnimate>
 
                       <div className="flex flex-row gap-4">
-                          <Button text="Work Exp"></Button>
-                          <Button text="Projects"></Button>
+                          <button onClick={()=>scrollAction("workx")} className="p-3 border-purple-400 border text-purple-400 bg-black hover:bg-purple-500 hover:text-black font-bold  text-2xl rounded-2xl">My Work</button>
+                          <button onClick={()=> scrollAction("projects")} className="p-3 border-purple-400 border text-purple-400 bg-black hover:bg-purple-500 hover:text-black font-bold  text-2xl rounded-2xl">Projects</button>
                       </div>
 
                       <div className="flex flex-row gap-4 items-center">
                               <div className="flex flex-col gap-3 justify-center items-center">
                                 <hr className="bg-purple-700 w-1 h-14"/>
-                                <FaLinkedin size={40} className=""/>
-                                <FaGithub size={40} className=" " />
+                                <a href="https://www.linkedin.com/in/raj-cherukuru/" target="_blank"> <FaLinkedin size={40} className=""/></a>
+                                <a href="https://github.com/RajCherukuru" target="blank"><FaGithub size={40} className=" " /></a>
+                                
                               </div>
                               <div className="w-[300px] font-mono italic leading-9">
-                                Hi, I'm Raj Cherukuru. I'm a 25 yrs old Full Stack Developer.I love to code and I love to create. I'm a creative thinker and I love to solve problems.
+                                I'm a professional Software Developer. I love to code and I love to create. Finished my Masters from Arizona State University, actively looking for full-time opportunities.
                               </div>
                         </div>
                               
 
                   </div>
 
-                  <img height="600" width="500" className="rounded-lg" src="https://i0.wp.com/curiositygym.com/wp-content/uploads/2022/05/portfolio1.jpg?fit=1920%2C1080&ssl=1"/>
+                  <FloatingImg></FloatingImg>
 
 
             </div>

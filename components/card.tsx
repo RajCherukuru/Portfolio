@@ -5,7 +5,7 @@ import React from "react";
 
 
 
-export const Card = (props:{title: string, desc: string, skills:string[]})=>{
+export const Card = (props:{title: string, desc: string, skills:string})=>{
 
     // const {scrollYProgress}= useViewportScroll();
     // const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
@@ -17,50 +17,41 @@ export const Card = (props:{title: string, desc: string, skills:string[]})=>{
     const skills= props.skills
 
     return (
-        <motion.div 
-        whileHover={{ scale: 1.1 }}
+        <motion.div whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-
-        
-        animate={{ type: spring}}
-        transition={{
-            ease: "easeOut",
-            duration: 0.1,
-            scale: {
-              type: "spring", stiffness:70
-            }
-          }}
-          initial={{scale:0.8, opacity: 0}}
-        whileInView={{ scale:1 , opacity: 1}}
-       
-         className="flex flex-row justify-center gap-16 items-center rounded-3xl border-purple-700 border-b-8 border-r-8 ">
-
-            <div className="flex flex-col gap-16">
-
-                <div className="flex flex-col gap-4">
-                    <div>{title}</div>
-                    <div className="w-96">{desc}</div>
-                </div>
+        initial={{scale:0.7, opacity: 0}}
+        whileInView={{ scale:1 , opacity: 1}} className="relative w-full mx-auto font-mono">
 
 
-                <div className="flex gap-3 ">
-
-                    {
-                        skills.map((skill, index)=>(
-                            <div className="uppercase" key={index}>{skill}</div>
-                        ))
-                    }
-
-                </div>
-
-
-               
+            <div className="absolute w-full h-full bg-purple-400 left-3 top-3 -z-10 rounded-xl ">
+                dfd
             </div>
 
-            <img    height="600" width="500" className="rounded-lg" src="https://i0.wp.com/curiositygym.com/wp-content/uploads/2022/05/portfolio1.jpg?fit=1920%2C1080&ssl=1"/>
+            {/* <div className="flex flex-col justify-between items-center w-full h-full gap-16 items-center rounded-3xl bg-black border-white border p-10 "> */}
+
+                    <div className="flex flex-col gap-16 bg-black border-white border p-10 rounded-3xl w-full h-full justify-between ">
+
+                        <div className="flex flex-col gap-4">
+                            <div className="text-4xl text-yellow-400">{title}</div>
+                            <div className="w-96">{desc}</div>
+                        </div>
+
+
+                        <div className="text-xl  text-cyan-400 ">
+
+                            {skills}
+
+                        </div>
+
+
+                    
+                    {/* </div> */}
+
+                    {/* <img    height="600" width="500" className="rounded-lg border-green-400 border-4" src="https://i0.wp.com/curiositygym.com/wp-content/uploads/2022/05/portfolio1.jpg?fit=1920%2C1080&ssl=1"/> */}
 
 
 
+                </div>
         </motion.div>
     )
 }
