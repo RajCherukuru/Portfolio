@@ -10,7 +10,22 @@ import { motion } from "framer-motion";
 
 import { FloatingImg } from "./floatingImg";
 
-export const Introduction = ({scrollAction, sectionRefs})=>{
+interface SectionRefs {
+  intro: React.RefObject<HTMLDivElement>;
+  skills: React.RefObject<HTMLDivElement>;
+  workx: React.RefObject<HTMLDivElement>;
+  projects: React.RefObject<HTMLDivElement>;
+}
+
+type ScrollAction = (section: keyof SectionRefs) => void;
+
+interface IntroductionProps {
+  sectionRefs: SectionRefs;
+  scrollAction: ScrollAction;
+}
+
+
+export const Introduction: React.FC<IntroductionProps>  = ({scrollAction, sectionRefs})=>{
 
 
     return (
@@ -39,7 +54,7 @@ export const Introduction = ({scrollAction, sectionRefs})=>{
                                 
                               </div>
                               <div className="w-[300px] font-mono italic leading-9">
-                                I'm a professional Software Developer. I love to code and I love to create. Finished my Masters from Arizona State University, actively looking for full-time opportunities.
+                                I&apos;m a professional Software Developer. I love to code and I love to create. Finished my Masters from Arizona State University, actively looking for full-time opportunities.
                               </div>
                         </div>
                               

@@ -1,9 +1,10 @@
 import React from "react";
 import { Skillstab } from "./skilltab";
 import { Heading } from "./heading";
-import { SiJavascript, SiPython, SiCplusplus, SiTypescript, SiReact, SiNodedotjs, SiNextdotjs, SiRedux, SiRecoil, SiFlask, SiMongodb, SiRedis, SiPostgresql, SiJenkins, SiAnsible, SiKubernetes, SiServer } from 'react-icons/si';
+import { SiJavascript, SiPython, SiCplusplus, SiTypescript, SiReact, SiNodedotjs, SiNextdotjs, SiRedux, SiRecoil, SiFlask, SiMongodb, SiRedis, SiPostgresql, SiJenkins, SiAnsible, SiKubernetes } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
 import { HiCodeBracket } from "react-icons/hi2";
+
 
 interface SectionRefs {
     workx: React.RefObject<HTMLDivElement>;
@@ -13,8 +14,12 @@ interface SectionRefs {
   
   }
   
+  interface Skills {
+    sectionRefs: SectionRefs;}
 
-export const Skills: React.FC<SectionRefs> = ({sectionRefs}) => {
+
+
+export const Skills: React.FC<Skills> = ({sectionRefs}) => {
 
     const skills1 = [
         { name: "JavaScript", url: "", color: "bg-purple-400", icon: <SiJavascript className="h-8 w-8 text-white" /> },

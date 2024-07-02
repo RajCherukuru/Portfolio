@@ -10,10 +10,12 @@ interface SectionRefs {
   
   }
   
+  interface Projects {
+    sectionRefs: SectionRefs;}
 
 
 
-const  Projects: React.FC<SectionRefs>  = ({sectionRefs})=>{
+const  Projects: React.FC<Projects>  = ({sectionRefs})=>{
 
     const projects=[
         {
