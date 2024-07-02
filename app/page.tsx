@@ -38,7 +38,7 @@ export default function Home() {
     <div className="w-screen h-screen overflow-auto flex flex-col gap-28">
       <Navbar scrollAction={scrollAction} />
 
-      <div className="w-10/12 h-full mx-auto flex flex-col gap-56">
+      <div className="w-8/12 h-full mx-auto flex flex-col gap-56">
         <Introduction sectionRefs={sectionRefs} scrollAction={scrollAction}  />
 
         <Skills sectionRefs={sectionRefs} />
