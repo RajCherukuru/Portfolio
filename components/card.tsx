@@ -51,7 +51,7 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
                            
 
 
-                            <div className="w-96 text-sm text-white">{desc}</div>
+                            <div className="text-sm text-white ">{desc}</div>
                         </div>
 
 
