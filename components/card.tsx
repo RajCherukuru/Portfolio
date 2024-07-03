@@ -20,7 +20,6 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
 
     return (
         <motion.div whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
         initial={{scale:0.7, opacity: 0}}
         whileInView={{ scale:1 , opacity: 1}} className="relative w-full mx-auto font-mono">
 
@@ -39,9 +38,9 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
                                 <div className="text-4xl text-yellow-400">{title}</div>
                                 <div className="flex gap-3">   
                                 <a href="https://github.com/RajCherukuru" target="blank"><FaGithub size={40} className=" " /></a>
-                                
+
                                 {
-                                    title=="StudyNotion" ?  <a href="https://github.com/RajCherukuru" target="blank"><CgWebsite size={40} className=" " /></a>: <div></div>
+                                    title=="StudyNotion" ?  <a href="https://study-notion-kohl-seven.vercel.app/" target="blank"><CgWebsite size={40} className=" " /></a>: <div></div>
                                 }
                                
 
