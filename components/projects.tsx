@@ -45,7 +45,7 @@ const  Projects: React.FC<Projects>  = ({sectionRefs})=>{
 
             <Heading heading="Projects"></Heading>
 
-            <div className="grid grid-cols-2 gap-20">
+            <div className="grid sm: grid-cols-1 md:grid-cols-2 gap-20">
                 {
                     projects.map((project, index)=>(
                         <Card key={index} title={project.title} desc={project.desc} skills={project.skills}></Card>

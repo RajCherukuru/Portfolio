@@ -30,16 +30,17 @@ export const Introduction: React.FC<IntroductionProps>  = ({scrollAction, sectio
 
     return (
 
-        <section ref={sectionRefs.intro} className="w-full  flex  font-mono ">
+        <section ref={sectionRefs.intro} className="w-full  flex  font-mono flex-wrap ">
 
-            <div className="flex flex-row gap-10 mx-auto w-full justify-evenly items-start">
+            <div className="flex lg:flex-row md:flex-row sm:flex-col flex-wrap lg:mx-auto  gap-10  w-full justify-evenly items-start">
 
                   <div className="flex flex-col gap-5">
 
 
                       <div className=" text-cyan-400 text-4xl">Raj Kishan Cherukuru</div>
                       <div className="text-3xl text-green-400">Code Magician.</div>
-                      <TypeAnimate></TypeAnimate>
+
+                        <div className="text-3xl text-green-400">Crafting Spells with Code.</div>
 
                       <div className="flex flex-row gap-4 text-xl">
                           <button onClick={()=>scrollAction("workx")} className="p-3 border-purple-400 border text-purple-400 bg-black hover:bg-purple-500 hover:text-black font-bold   rounded-2xl">My Work</button>
@@ -53,9 +54,12 @@ export const Introduction: React.FC<IntroductionProps>  = ({scrollAction, sectio
                                 <a href="https://github.com/RajCherukuru" target="blank"><FaGithub size={30} className=" " /></a>
                                 
                               </div>
-                              <div className="w-[300px] font-mono italic text-sm leading-7">
+
+
+                              <TypeAnimate></TypeAnimate>
+                              {/* <div className="w-[300px] font-mono italic text-sm leading-7">
                                 I&apos;m a professional Software Developer. I love to code and I love to create. Finished my Masters from Arizona State University, actively looking for full-time opportunities.
-                              </div>
+                              </div> */}
                         </div>
                               
 

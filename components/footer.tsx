@@ -6,8 +6,9 @@ import { FaGithub } from "react-icons/fa";
 export const Footer = ()=>{
 
     return (
-        <div className="flex flex-row justify-between items-center border-t p-20 ">
-            <div className="flex flex-row gap-5">
+        <div className="flex flex-row justify-between items-center border-t p-20 bg-black ">
+
+            <div className="flex  flex-row gap-5">
             <a href="https://www.linkedin.com/in/raj-cherukuru/" target="_blank"> <FaLinkedin size={40} className=""/></a>
             <a href="https://github.com/RajCherukuru" target="blank"><FaGithub size={40} className=" " /></a>
             </div>

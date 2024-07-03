@@ -39,7 +39,7 @@ export default function Home() {
 
       <Navbar scrollAction={scrollAction} />
 
-      <div className="w-[1200px] h-full mx-auto flex flex-col gap-44 bg-black ">
+      <div className=" lg:w-[1200px]    h-full mx-auto flex flex-col gap-44 bg-black ">
         <Introduction sectionRefs={sectionRefs} scrollAction={scrollAction}  />
 
         <Skills sectionRefs={sectionRefs} />
