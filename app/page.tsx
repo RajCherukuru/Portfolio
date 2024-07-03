@@ -35,10 +35,11 @@ export default function Home() {
   };
 
   return (
-    <div className="w-screen h-screen overflow-auto flex flex-col gap-28">
+    <div className="w-screen h-screen overflow-auto flex flex-col gap-20">
+
       <Navbar scrollAction={scrollAction} />
 
-      <div className="w-12/12 h-full mx-auto flex flex-col gap-56">
+      <div className="w-9/12 h-full mx-auto flex flex-col gap-44">
         <Introduction sectionRefs={sectionRefs} scrollAction={scrollAction}  />
 
         <Skills sectionRefs={sectionRefs} />
@@ -48,6 +49,7 @@ export default function Home() {
         <Projects sectionRefs={sectionRefs} />
 
         <Footer />
+
       </div>
     </div>
   );

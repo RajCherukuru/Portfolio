@@ -28,7 +28,7 @@ export const TypeAnimate= ()=>{
                     speed={15}
                     style={{ fontSize: '2em', display: 'inline-block' }}
                     repeat={Infinity}
-                    className="text-green-400"
+                    className="text-green-400 text-2xl"
                   />
     )
 

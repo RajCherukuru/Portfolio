@@ -17,7 +17,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ scrollAction }) => {
 
   return (
-    <div className="flex flex-row justify-evenly w-1/2 mx-auto mt-5 p-7 text-2xl text-yellow-300 font-mono">
+    <div className="flex flex-row justify-evenly w-1/2 mx-auto p-7 text-xl text-yellow-300 font-mono">
       <button onClick={()=> scrollAction("intro")} className="transform duration-300 hover:scale-150 p-4 rounded-2xl cursor-pointer">./</button>
       <button onClick={()=> scrollAction("skills")} className="transform duration-300 hover:scale-150 p-4 rounded-2xl cursor-pointer">Skills</button>
 

@@ -21,7 +21,7 @@ export const FloatingImg= ()=>{
                 className="rounded-3xl"
                 src="/photo.jpg" 
                 alt="Description of Photo" 
-                width={400} 
+                width={300} 
                 height={300} 
             />
         </motion.div>

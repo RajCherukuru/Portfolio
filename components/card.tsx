@@ -30,17 +30,17 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
 
             {/* <div className="flex flex-col justify-between items-center w-full h-full gap-16 items-center rounded-3xl bg-black border-white border p-10 "> */}
 
-                    <div className="flex flex-col gap-16 bg-black border-white border p-10 rounded-3xl w-full h-full justify-between ">
+                    <div className="flex flex-col gap-10 bg-black border-white border p-5 rounded-3xl w-full h-full justify-between ">
 
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-2">
 
                             <div className="flex justify-between">
-                                <div className="text-4xl text-yellow-400">{title}</div>
+                                <div className="text-2xl text-yellow-400">{title}</div>
                                 <div className="flex gap-3">   
-                                <a href="https://github.com/RajCherukuru" target="blank"><FaGithub size={40} className=" " /></a>
+                                <a href="https://github.com/RajCherukuru" target="blank"><FaGithub size={30} className=" " /></a>
 
                                 {
-                                    title=="StudyNotion" ?  <a href="https://study-notion-kohl-seven.vercel.app/" target="blank"><CgWebsite size={40} className=" " /></a>: <div></div>
+                                    title=="StudyNotion" ?  <a href="https://study-notion-kohl-seven.vercel.app/" target="blank"><CgWebsite size={30} className=" " /></a>: <div></div>
                                 }
                                
 
@@ -51,11 +51,11 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
                            
 
 
-                            <div className="w-96">{desc}</div>
+                            <div className="w-96 text-sm">{desc}</div>
                         </div>
 
 
-                        <div className="text-xl  text-cyan-400 ">
+                        <div className="text-lg  text-cyan-400 ">
 
                             {skills}
 

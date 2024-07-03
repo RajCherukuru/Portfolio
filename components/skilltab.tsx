@@ -15,10 +15,11 @@ export const Skillstab: React.FC<SkillstabProps> = ({ name, url, color, icon }) 
             whileTap={{ scale: 1.1 }}
             initial={{ opacity: 0, y: 50, scale: 0.3 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            className="relative"
+            className="relative "
         >
-            <div className={`absolute left-2 top-2 -z-10 h-full w-60 ${color} rounded-lg`} />
-            <div className="flex flex-row gap-2 items-center justify-center bg-black p-4 rounded-xl border-white border-2 w-60">
+            <div className={`absolute left-2 top-2 -z-10  w-40 h-full ${color} rounded-lg`}>fd </div>
+
+            <div className="flex flex-row gap-2 items-center justify-center bg-black p-4 rounded-xl border-white border-2 w-40 ">
                 {icon}
                 <div>{name}</div>
             </div>
