@@ -24,13 +24,13 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
         whileInView={{ scale:1 , opacity: 1}} className="relative w-full mx-auto font-mono">
 
 
-            <div className="absolute w-full h-full bg-purple-400 left-3 top-3 -z-10 rounded-xl ">
+            <div className="absolute w-full h-full bg-purple-400 left-3 top-3 z-10 rounded-xl ">
                 dfd
             </div>
 
             {/* <div className="flex flex-col justify-between items-center w-full h-full gap-16 items-center rounded-3xl bg-black border-white border p-10 "> */}
 
-                    <div className="flex flex-col gap-10 bg-black border-white border p-6 rounded-3xl w-full h-full justify-between ">
+                    <div className=" relative z-20 flex flex-col gap-10 bg-black border-white border p-6 rounded-3xl w-full h-full justify-between ">
 
                         <div className="flex flex-col gap-2">
 
@@ -51,7 +51,7 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
                            
 
 
-                            <div className="w-96 text-sm">{desc}</div>
+                            <div className="w-96 text-sm text-white">{desc}</div>
                         </div>
 
 

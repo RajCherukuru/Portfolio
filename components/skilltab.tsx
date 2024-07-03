@@ -17,9 +17,9 @@ export const Skillstab: React.FC<SkillstabProps> = ({ name, url, color, icon }) 
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             className="relative "
         >
-            <div className={`absolute left-2 top-2 -z-10  w-40 h-full ${color} rounded-lg`}>fd </div>
+            <div  className={`absolute left-2 top-2 z-10  w-40 h-full ${color} rounded-lg`}>fd </div>
 
-            <div className="flex flex-row gap-2 items-center justify-center bg-black p-4 rounded-xl border-white border-2 w-40 ">
+            <div className=" relative z-20  flex flex-row gap-2 items-center justify-center bg-black p-4 rounded-xl border-white border-2 w-40 ">
                 {icon}
                 <div>{name}</div>
             </div>
