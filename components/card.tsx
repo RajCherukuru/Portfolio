@@ -30,7 +30,7 @@ export const Card = (props:{title: string, desc: string, skills:string})=>{
 
             {/* <div className="flex flex-col justify-between items-center w-full h-full gap-16 items-center rounded-3xl bg-black border-white border p-10 "> */}
 
-                    <div className="flex flex-col gap-10 bg-black border-white border p-5 rounded-3xl w-full h-full justify-between ">
+                    <div className="flex flex-col gap-10 bg-black border-white border p-6 rounded-3xl w-full h-full justify-between ">
 
                         <div className="flex flex-col gap-2">
 

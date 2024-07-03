@@ -67,32 +67,32 @@ export const Skills: React.FC<Skills> = ({sectionRefs}) => {
             <div className="flex flex-col gap-10 items-center text-sm">
 
                 <Heading heading="Skills" />
-                <div className="grid grid-cols-4 w-9/12 mx-auto">
+                <div className="grid grid-cols-4 w-[900px] mx-auto">
                     {skills1.map((skill, index) => (
                         <Skillstab key={index} name={skill.name} url={skill.url} color={skill.color} icon={skill.icon} />
                     ))}
                 </div>
-                <div className="grid grid-cols-4 w-8/12 mx-auto">
+                <div className="grid grid-cols-4 w-[800px] mx-auto">
                     {skills2.map((skill, index) => (
                         <Skillstab key={index} name={skill.name} url={skill.url} color={skill.color} icon={skill.icon} />
                     ))}
                 </div>
-                <div className="grid grid-cols-3 w-7/12 mx-auto">
+                <div className="grid grid-cols-3 w-[700px] mx-auto">
                     {skills3.map((skill, index) => (
                         <Skillstab key={index} name={skill.name} url={skill.url} color={skill.color} icon={skill.icon} />
                     ))}
                 </div>
-                <div className="grid grid-cols-3 w-6/12 mx-auto">
+                <div className="grid grid-cols-3 w-[600px] mx-auto">
                     {skills4.map((skill, index) => (
                         <Skillstab key={index} name={skill.name} url={skill.url} color={skill.color} icon={skill.icon} />
                     ))}
                 </div>
-                <div className="grid grid-cols-2 w-4/12 mx-auto">
+                <div className="grid grid-cols-2 w-[400px] mx-auto">
                     {skills6.map((skill, index) => (
                         <Skillstab key={index} name={skill.name} url={skill.url} color={skill.color} icon={skill.icon} />
                     ))}
                 </div>
-                <div className="grid grid-cols-1 mx-auto">
+                <div className="grid grid-cols-1 w-[200px] mx-auto">
                     {skills7.map((skill, index) => (
                         <Skillstab key={index} name={skill.name} url={skill.url} color={skill.color} icon={skill.icon} />
                     ))}
