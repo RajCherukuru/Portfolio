@@ -18,10 +18,18 @@ interface SectionRefs {
 const  Projects: React.FC<Projects>  = ({sectionRefs})=>{
 
     const projects=[
+
+
         {
             title:"StudyNotion",
             desc:"StudyNotion is an innovative and dynamic EdTech platform designed to revolutionize the way students learn and instructors teach. Students can purchase courses seamlessly through Razorpay, while instructors have the flexibility to create and structure their courses with ease.",
             skills:"Express.js, Mongoose ODM, Node.js, Tailwind CSS, MongoDB"
+
+        },
+        {
+            title:"AskDocs",
+            desc:"AskDocs is an intelligent PDF query platform that enables natural language interaction across multiple documents. Built using Streamlit, OpenAI embeddings, and FAISS, it processes and indexes document chunks to deliver fast, accurate responses — streamlining access to large volumes of text.",
+            skills:"LLM, OpenAI, FAISS, Streamlit"
 
         },
         {

@@ -58,7 +58,7 @@ export const Introduction: React.FC<IntroductionProps>  = ({scrollAction, sectio
 
                               <TypeAnimate></TypeAnimate>
                               {/* <div className="w-[300px] font-mono italic text-sm leading-7">
-                                I&apos;m a professional Software Developer. I love to code and I love to create. Finished my Masters from Arizona State University, actively looking for full-time opportunities.
+                                I&apos;m a professional Software Developer. I love to code and I love to create. Finished my Masters from Arizona State University.
                               </div> */}
                         </div>
                               
